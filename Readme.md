@@ -63,3 +63,28 @@ A RESTful API queries Solr and returns search results to client applications suc
 ⭐ REST API service (ASP.NET / Java / Node.js, etc.)
 ```
 
+--- 
+## Set-up Guide
+```
+1. [Download Logstash](https://www.elastic.co/downloads/logstash)
+
+2. [Download SOLR](https://solr.apache.org/downloads.html)
+
+3. Create a Folder/Core inside the SOLR directory on location: server -> solr 
+
+4. Copy config from configsets and paste it inside the core folder
+
+5. Configure managed-schema inside the config according to your requirement. 
+
+6. For configuring Logstash create a folder inside config folder, and in it create a file, i.e. pipeline.conf
+
+7. Configure the pipeline according to your requirement
+
+8. For ETL with MS SQL, download JDBC driver for MS SQL and set mssql-jdbc_auth-13.2.1.x64.dll in C:\Windows\System32
+
+9. For configuring pipeline follow pipeline.conf in Logstash -> config -> pipelines -> pipeline.conf 
+
+10. Set -Duser.timezone=Asia/Dhaka or others in jvm.options in Logstash -> config 
+
+11. Other things are pre-implemented feel free to change according to your needs. 
+```
