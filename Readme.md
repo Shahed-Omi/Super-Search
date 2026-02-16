@@ -8,7 +8,7 @@ This system is designed for applications that require low-latency search, advanc
 
 ## 🏗️ Architecture Overview
 
-```mermaid
+```
 MS SQL Server
 ↓
 Logstash
